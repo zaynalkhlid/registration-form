@@ -12,41 +12,43 @@
 <p>Join us to explore the latest trends in web development and AI</p>
 
 <h3>Fill This Form</h3>
-<>
+<form>
+
 <label for="fullname">Full Name :</label> <br>
-<input type="text" id="fullname" name="fullname" required>
-<br>
+<input type="text" id="fullname" name="fullname" required><br>
+
 <label for="email">E-mail :</label> <br>
-<input type="email" id="email" name="email">
-<br>
+<input type="email" id="email" name="email" required><br>
+
 <label for="pnumber">Phone Number :</label> <br>
-<input type="tel" name="pnumber" id="pnumber">
-<br>
-<label for="gender">Gender :</label> <br>
-<select name="gender" id="gender" required>
-    <option value="choose">Select Gender</option>
-    <option value="male">Male</option>
-    <option value="female">Female</option>
-    <option value="other">Prefer not to Say</option>
-</select>
-<br>
-    <label for="experience">Experience :</label><br>
-    <input type="radio" id="student" name="experience" value="student" required>
-    <label for="student">Student</label><br>
-    <input type="radio" id="no-experience" name="experience" value="no-experience">
-    <label for="no-experience">No Experience</label><br>
-    <input type="radio" id="intern" name="experience" value="intern">
-    <label for="intern">Intern</label><br>
-    <input type="radio" id="junior" name="experience" value="junior">
-    <label for="junior">Junior</label><br>
-    <input type="radio" id="senior" name="experience" value="senior">
-    <label for="senior">Senior</label><br>
-    <input type="radio" id="c-level" name="experience" value="c-level">
-    <label for="c-level">C Level</label><br>
-    <input type="radio" id="freelancer" name="experience" value="freelancer">
-    <label for="freelancer">Freelancer</label><br>
+<input type="tel" name="pnumber" id="pnumber" required><br>
+
+<fieldset>
+  <legend>Gender:</legend>
+  <input type="radio" id="male" value="male" name="gender" required>
+  <label for="male">Male</label>
+  <input type="radio" name="gender" id="female" value="female">
+  <label for="female">Female</label>
+  <input type="radio" value="not-say" name="gender" id="not-say">
+  <label for="not-say">Others</label>
+</fieldset>
+
+
+<label for="experience">Experience</label><br>
+<select name="experience" id="experience" required>
+    <option value="no-experience">No Experience</option>
+    <option value="student">Student</option>
+    <option value="intern">Intern</option>
+    <option value="junior">Junior</option>
+    <option value="senior">Senior</option>
+    <option value="managerial">Managerial</option>
+    <option value="c-level">C Level</option>
+    <option value="freelancer">Freelancer</option>
+</select>  <br>
+
 <label for="institution">Current Institution :</label> <br>
 <input type="text" name="institution" id="institution"><br>
+
 <label >Workshop Interests:</label><br>
     <input type="checkbox" id="html-css" name="workshops" value="html-css" >
     <label for="html-css">HTML & CSS</label><br>
@@ -66,8 +68,9 @@
     <label for="ui-ux">UI/UX</label><br>
     <input type="checkbox" id="writing" name="workshops" value="writing">
     <label for="writing">Writing</label><br>
+
     <label for="size">T-shirt size :</label><br>
-<select name="size" id="size">
+<select name="size" id="size" required>
     <option value="" selected disabled>Size</option>
     <option value="xs">XS</option>
     <option value="s">S</option>
@@ -76,15 +79,19 @@
     <option value="xl">XL</option>
     <option value="xxl">XXL</option>
 </select><br>
+
 <label for="linkedin">Your Linkedin :</label><br>
-<input type="url" name="linkedin" id="linkedin"><br>
+<input type="url" name="linkedin" id="linkedin" required><br>
+
 <label for="extra">Comment or Questions :</label><br>
 <textarea name="extra" id="extra"></textarea><br>
-<input type="checkbox" id="privacy-agreement" name="privacy-agreement">
+
+<input type="checkbox" id="privacy-agreement" name="privacy-agreement" required>
 <label for="privacy-agreement">I agree to the Privacy Policy</label><br>
+
 <button type="submit">Submit</button>
+
 <button type="reset">Reset</button>
 </form>
-   
 </body>
 </html>
